@@ -1,13 +1,14 @@
 function getComputerChoice() {
-    let choiceNumber = Math.floor(Math.random() * 2);
+    let choiceNumber = Math.floor(Math.random() * 3);
+    console.log(choiceNumber);
     switch(choiceNumber) {
-        case '0':
-            return "rock";
+        case 0:
+            return "rock"; 
             break;
-        case '1':
+        case 1:
             return "scissor";
             break;
-        case '2':
+        case 2:
             return "paper";
             break;
 
@@ -52,10 +53,14 @@ function playRound(playerselection, computerSelection) {
 }
 
 function game() {
-    
+    for (i = 0; i < 4; i++) {
+        let playerselection = prompt("Please select rock, paper, or scissor");
+        let computerSelection = getComputerChoice();
+        console.log(playRound(playerselection,computerSelection));
+    }
 }
 
-//let playerselection = prompt("Please select rock, paper, or scissor");
-//let computerSelection = getComputerChoice;
+game();
+
 
 
