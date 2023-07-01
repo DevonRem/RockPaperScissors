@@ -23,39 +23,142 @@ function playRound(playerselection, computerSelection) {
         if (computerSelection === "scissor") {
             playerScore += 1;
             message.textContent = "you win! Rock beats scissor";
+            results.textContent = `Player: ${ playerScore }, Computer: ${ computerScore }`;
+            if (playerScore === 5) {
+                message.textContent = "Player Wins! The game is over!";
+            }
+            if (computerScore === 5) {
+                message.textContent = "Computer Wins! The game is over!";
+                results.textContent = `Player: 0, Computer: 0`;
+            }
+
         }
         else if (computerSelection === "paper") {
             computerScore += 1;
             message.textContent = "you lose! Paper beats rock";
+            results.textContent = `Player: ${ playerScore }, Computer: ${ computerScore }`;
+            if (playerScore === 5) {
+                message.textContent = "Player Wins! The game is over!";
+            }
+            if (computerScore === 5) {
+                message.textContent = "Computer Wins! The game is over!";
+                results.textContent = `Player: 0, Computer: 0`;
+            }
         }
         else {
             message.textContent = "Tie! Both of you chose rock";
+            results.textContent = `Player: ${ playerScore }, Computer: ${ computerScore }`;
+            if (playerScore === 5) {
+                message.textContent = "Player Wins! The game is over!";
+            }
+            if (computerScore === 5) {
+                message.textContent = "Computer Wins! The game is over!";
+                results.textContent = `Player: 0, Computer: 0`;
+            }
         }
     }
     if (playerselection === "scissor") {
         if (computerSelection === "scissor") {
             message.textContent = "Tie! Both of you chose scissor";
+            results.textContent = `Player: ${ playerScore }, Computer: ${ computerScore }`;
+            if (playerScore === 5) {
+                message.textContent = "Player Wins! The game is over!";
+                results.textContent = `Player: 0, Computer: 0`;
+                playerScore = 0;
+                computerScore = 0;
+            }
+            if (computerScore === 5) {
+                message.textContent = "Computer Wins! The game is over!";
+                results.textContent = `Player: 0, Computer: 0`;
+                playerScore = 0;
+                computerScore = 0;
+            }
         }
         else if (computerSelection === "paper") {
             playerScore += 1;
             message.textContent = "you win! scissor beats paper";
+            results.textContent = `Player: ${ playerScore }, Computer: ${ computerScore }`;
+            if (playerScore === 5) {
+                message.textContent = "Player Wins! The game is over!";
+                results.textContent = `Player: 0, Computer: 0`;
+                playerScore = 0;
+                computerScore = 0;
+            }
+            if (computerScore === 5) {
+                message.textContent = "Computer Wins! The game is over!";
+                results.textContent = `Player: 0, Computer: 0`;
+                playerScore = 0;
+                computerScore = 0;
+            }
         }
         else {
             computerScore += 1;
             message.textContent = "you lose! rock beats scissor";
+            results.textContent = `Player: ${ playerScore }, Computer: ${ computerScore }`;
+            if (playerScore === 5) {
+                message.textContent = "Player Wins! The game is over!";
+                results.textContent = `Player: 0, Computer: 0`;
+                playerScore = 0;
+                computerScore = 0;
+            }
+            if (computerScore === 5) {
+                message.textContent = "Computer Wins! The game is over!";
+                results.textContent = `Player: 0, Computer: 0`;
+                playerScore = 0;
+                computerScore = 0;
+            }
         }
     }
     if (playerselection === "paper") {
         if (computerSelection === "scissor") {
             computerScore += 1;
             message.textContent = "you lose! scissor beats paper";
+            results.textContent = `Player: ${ playerScore }, Computer: ${ computerScore }`;
+            if (playerScore === 5) {
+                message.textContent = "Player Wins! The game is over!";
+                results.textContent = `Player: 0, Computer: 0`;
+                playerScore = 0;
+                computerScore = 0;
+            }
+            if (computerScore === 5) {
+                message.textContent = "Computer Wins! The game is over!";
+                results.textContent = `Player: 0, Computer: 0`;
+                playerScore = 0;
+                computerScore = 0;
+            }
         }
         else if (computerSelection === "paper") {
             message.textContent = "Tie! both of you chose paper";
+            results.textContent = `Player: ${ playerScore }, Computer: ${ computerScore }`;
+            if (playerScore === 5) {
+                message.textContent = "Player Wins! The game is over!";
+                results.textContent = `Player: 0, Computer: 0`;
+                playerScore = 0;
+                computerScore = 0;
+            }
+            if (computerScore === 5) {
+                message.textContent = "Computer Wins! The game is over!";
+                results.textContent = `Player: 0, Computer: 0`;
+                playerScore = 0;
+                computerScore = 0;
+            }
         }
         else {
             playerScore += 1;
             message.textContent = "you win! paper beats rock";
+            results.textContent = `Player: ${ playerScore }, Computer: ${ computerScore }`;
+            if (playerScore === 5) {
+                message.textContent = "Player Wins! The game is over!";
+                results.textContent = `Player: 0, Computer: 0`;
+                playerScore = 0;
+                computerScore = 0;
+            }
+            if (computerScore === 5) {
+                message.textContent = "Computer Wins! The game is over!";
+                results.textContent = `Player: 0, Computer: 0`;
+                playerScore = 0;
+                computerScore = 0;
+            }
         }
     }
 }
